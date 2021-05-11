@@ -58,7 +58,9 @@ export default {
           if (!word) {
             ElMessage.error('用户名称错误');
             return;
-          } else if (word !== passWord) {
+          }
+
+          if (word !== passWord) {
             ElMessage.error('密码错误，请重新输入');
             return;
           }
@@ -84,7 +86,7 @@ export default {
 .login-moedl {
   position: absolute;
   width: 300px;
-  heigt: 300px;
+  height: 300px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
