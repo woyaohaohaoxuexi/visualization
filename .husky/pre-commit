@@ -1,4 +1,6 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-eslint --fix ./src --ext .vue,.js
+#eslint --fix ./src --ext .vue,.js
+npx lint-staged
+prettier --write ./src
