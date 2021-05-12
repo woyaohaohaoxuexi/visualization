@@ -5,7 +5,7 @@ import App from './App.vue';
 import router from './router/index';
 import './style/index.scss';
 
-const app = createApp(App);
-app.use(router);
+const app = createApp(App)
+app.use(router)
 app.use(ElementPlus);
 app.mount('#app');
