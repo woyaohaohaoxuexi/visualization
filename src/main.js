@@ -6,6 +6,6 @@ import router from './router/index';
 import './style/index.scss'
 
 const app = createApp(App)
-app.use(router);
+app.use(router)
 app.use(ElementPlus)
-app.mount("#app");
+app.mount("#app")
